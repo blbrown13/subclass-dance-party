@@ -1,27 +1,57 @@
-body, html{
+body, html {
   height:100%;
 }
-body{
+
+body {
   margin: 0px;
-  background-color:#444;
   font-size: 18px;
+  background-size: cover;
+  background-image: url('src/dancefloor.jpg');
+  background-repeat: no-repeat;
+
 }
-body, a:link, a:visited, a:active{
-  color: lightblue;
+
+body, a:link, a:visited, a:active {
+  color: black;
 }
-.title, .addDancerButton{
+
+.title, .blinkyDancerButton, .breakyDancerButton, .jumpyDancerButton {
+  background-color: #fe7200;
   padding:5px 12px;
   float:right;
+  font-family: Arial; 
 }
-.topbar{
+
+.topbar {
   height:32px;
-  background-color: #555;
+  background-color: #fe7200;
+  display: inline;
 }
-.title{
-  background-color: #777;
+
+.title {
+  background-color: #fe7200;
 }
-.dancer{
+
+.dancer {
   border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
+
+.breakyDancer {
+  border:10px solid white;
+  border-radius:10px;
+  position:absolute;
+}
+
+.blinkyDancer {
+  border:10px solid yellow;
+  border-radius:10px;
+  position:absolute;
+}
+
+.jumpyDancer {
+  border:10px solid green;
   border-radius:10px;
   position:absolute;
 }
