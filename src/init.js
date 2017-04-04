@@ -1,7 +1,8 @@
 $(document).ready(function() {
   window.dancers = [];
 
-  $('.blinkyDancerButton, .breakyDancerButton, .jumpyDancerButton').on('click', function(event) {
+  $('.blinkyDancerButton, .breakyDancerButton, .jumpyDancerButton, .grumpyDancerButton')
+    .on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
      * As long as the "data-dancer-maker-function-name" attribute of a
