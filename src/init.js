@@ -1,7 +1,7 @@
 $(document).ready(function() {
   window.dancers = [];
 
-  $('.blinkyDancerButton, .breakyDancerButton, .jumpyDancerButton, .grumpyDancerButton')
+  $('.blinkyDancerButton, .breakyDancerButton, .jumpyDancerButton, .grumpyDancerButton, .squigglyDancerButton')
     .on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
@@ -29,6 +29,24 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+    console.log(window.dancers);
   });
+
+  // add lineup button
+  // var lineupDancersButton = $(this).data('lineupDancersButton');
+
+  $('.lineupDancersButton').on('click', function(event){
+    // console.log('hey you guys');
+    for (var i = 0; i < window.dancers.length; i++) {
+      var dancer = window.dancers[i];
+      // console.log(dancer);
+      var styleSettings = {
+        top: 500
+      };
+      dancer.$node.css(styleSettings);
+    }
+  });
+
 });
 
