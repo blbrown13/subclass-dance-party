@@ -6,15 +6,25 @@ body {
   margin: 0px;
   font-size: 18px;
   background-size: cover;
+<<<<<<< HEAD
   background-image: url('src/images/dancefloor.jpg');
   background-repeat: no-repeat;
+=======
+  background-image: url('src/dancefloor.jpg');
+  background-repeat: no-repeat;
+
+>>>>>>> 43b07b5bdc1ba693988b2d51a7a74de2246d750d
 }
 
 body, a:link, a:visited, a:active {
   color: black;
 }
 
+<<<<<<< HEAD
 .title, .blinkyDancerButton, .breakyDancerButton, .jumpyDancerButton, .grumpyDancerButton, .squigglyDancerButton, .lineupDancersButton {
+=======
+.title, .blinkyDancerButton, .breakyDancerButton, .jumpyDancerButton {
+>>>>>>> 43b07b5bdc1ba693988b2d51a7a74de2246d750d
   background-color: #fe7200;
   padding:5px 12px;
   float:right;
@@ -29,6 +39,7 @@ body, a:link, a:visited, a:active {
 
 .title {
   background-color: #fe7200;
+<<<<<<< HEAD
   /*display: inline;
   float: left;*/
 }
@@ -87,3 +98,30 @@ body, a:link, a:visited, a:active {
 
 
 
+=======
+}
+
+.dancer {
+  border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
+
+.breakyDancer {
+  border:10px solid white;
+  border-radius:10px;
+  position:absolute;
+}
+
+.blinkyDancer {
+  border:10px solid yellow;
+  border-radius:10px;
+  position:absolute;
+}
+
+.jumpyDancer {
+  border:10px solid green;
+  border-radius:10px;
+  position:absolute;
+}
+>>>>>>> 43b07b5bdc1ba693988b2d51a7a74de2246d750d
