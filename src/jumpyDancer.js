@@ -7,11 +7,25 @@ JumpyDancer.prototype = Object.create(Dancer.prototype);
 JumpyDancer.prototype.constructor = JumpyDancer; 
 
 JumpyDancer.prototype.step = function() {
-  // var oldStep = this.step;
-  // Dancer.prototype.step.call(this);
-  // this.$node.toggle();
+  var context = this;
+  context.$node.on('click', function(){
+  	
+	  var styleSettings = {
+	    top: context.top -= 50
+	  };
+
+	  context.$node.css(styleSettings);
+  });
 };
 
 /*
-css - make dancer jump 
+
+Dancer.prototype.setPosition = function(top, left) {
+  var styleSettings = {
+    top: top,
+    left: left
+  };
+
+  this.$node.css(styleSettings);
+};
 */
